@@ -9,15 +9,17 @@ public class LookAndSaySequence {
 		Scanner scanner = new Scanner(System.in);
 		
 		String str = "1"; //초기값 
-		int loop = 0; //개미수열을 반복시킬 횟수
+		int n = 0; //개미수열을 반복시킬 횟수
 		
 		System.out.print("몇 번째 개미수열 값을 확인하시겠습니까?(입력) : ");
-		loop = scanner.nextInt();
+		n = scanner.nextInt();
 		
-		for(int i = 0; i < loop; i++) {
-			System.out.println(str);
+		for(int i = 0; i < n; i++) {
 			str = start(str);
 		}
+		
+		System.out.println(str);
+		
 	}
 	
 	public static String start(String str) {
